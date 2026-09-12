@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "Lookahead",
+  "version": "0.1.0",
+  "description": "Send the current tab to a player that uses AirPlay's buffered engine (~120 ms) instead of macOS system audio output.",
+  "permissions": ["activeTab", "tabs", "nativeMessaging"],
+  "browser_action": {
+    "default_title": "Play this tab with low latency"
+  },
+  "background": { "scripts": ["background.js"] },
+  "browser_specific_settings": {
+    "gecko": { "id": "lookahead@ksha23" }
+  }
+}
